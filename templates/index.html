@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Employee Attrition Prediction</title>
+<style>
+body{
+background-color:#887FAF
+}
+</style>	
+
+</head>
+
+<body>
+ <div class="login">
+
+	<h1><center>Predict Attrition</h1></center>
+	
+	<form action="{{ url_for('predict')}}" method="POST" autocomplete="on">
+
+    <center><b>Age</b> :<input type="number" name="Age" placeholder="18-80" required min="18" max="80"></center><br><br>
+    
+    <center><h3>Department</h3><br><select name="Department_Research_Development" id="research" required="required">
+                <option value="Research & Development">Research & Development</option>
+                <option value="Sales">Sales</option>
+                <option value="Human Resources">Human Resources</option>
+            </select></center><br><br>
+    
+    <center><h3>BusinessTravel</h3><br><select name="BusinessTravel_Travel_Frequently" id="fuel" required="required">
+                <option value="Travel_Frequently">Travel_Frequently</option>
+                <option value="Travel_Rarely">Travel_Rarely</option>
+                <option value="Non-Travel">Non-Travel</option>
+            </select></center><br><br>
+            
+    <center><h3>JobRole</h3><br><select name="JobRole_Human_Resources" id="fuel" required="required">
+                <option value="Human_Resources">Human_Resources</option>
+                <option value="Laboratory_Technician">Laboratory_Technician</option>
+                <option value="Manager">Manager</option>
+                <option value="Manufacturing_Director">Manufacturing_Director</option>
+                <option value="Research_Director">Research_Director</option>
+                <option value="Research_Scientist">Research_Scientist</option>
+                <option value="Sales_Executive">Sales_Executive</option>
+                <option value="Sales_Representative">Sales_Representative</option>
+            </select></center><br><br>
+            
+    <center><b>MonthlyIncome</b> : <input type="number" name="MonthlyIncome" placeholder="1000-20000" required min="1000" max="20000" size="30">  (1000-20000)</center><br><br>
+    
+    <center><b>PercentSalaryHike</b> : <input type="number" name="PercentSalaryHike" placeholder="0-50" required min="1" max="50"></center><br><br>
+    
+    <center><h3>OverTime</h3><select name="OverTime" id="resea" required="required">
+                <option value="Yes">Yes</option>
+                <option value="NO">NO</option>
+            </select></center><br><br>
+            
+    <center><b>DistanceFromHome</b> : <input type="number" name="DistanceFromHome" placeholder="1-29" required min="1" max="29"> KM</center><br><br>
+    
+    <center><b>StockOptionLevel</b> : <input type="number" name="StockOptionLevel" placeholder="0-3" required min="0" max="3"></center><br><br>
+    
+    <center><h3>MaritalStatus</h3><br><select name="MaritalStatus_Married" id="fuel" required="required">
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+                <option value="Divorced">Divorced</option>
+            </select></center><br><br>
+    
+    <center><b>TrainingTimesLastYear</b> : <input type="number" name="TrainingTimesLastYear" placeholder="0-6" required min="0" max="6"></center><br><br>
+
+	<center><b>YearsSinceLastPromotion</b> : <input type="number" name="YearsSinceLastPromotion" placeholder="0-15" required min="0" max="15"></center><br><br>
+	
+	<center><b>Job Level</b> : <input type="number" name="JobLevel" placeholder="1-5" required min="1" max="5"></center><br><br>
+	
+	<center><b>YearsWithCurrManager</b> : <input type="number" name="YearsWithCurrManager" placeholder="0-17" required min="0" max="17"></center><br><br>
+	
+	<center><b>Total_Satisfaction</b> : <input type="number" name="Total_Satisfaction" placeholder="1.8-3.6" required min="1.8" max="3.6"></center><br><br>
+	
+	
+        <center><br><button type="submit" class="btn btn-primary btn-block btn-large">Predict</button></center>
+    </form>
+
+   <br>
+   <br>
+     <center><h1>{{ prediction_text }}</h1></center>
+
+ </div>
+
+
+</body>
+</style>
+</html>
