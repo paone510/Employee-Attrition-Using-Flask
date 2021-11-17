@@ -8,7 +8,7 @@ The main goal is to predict the requirement of resources and whether the existin
 
 ![High-employee-turnover](https://user-images.githubusercontent.com/88028350/141747011-645be726-2ba7-44e5-ae06-6e252559c354.jpg)
 
-***Project Structure***
+**Project Structure**
 
 This project has three major parts :
 
@@ -19,6 +19,7 @@ app.py - This contains Flask APIs that receives employee details through GUI or 
 templates - This folder contains the HTML template to allow user to enter employee detail and displays the predicted employee will leave the organization OR not.
 
 **Application Demo Video on Local Envoriment:**
+
 
 https://user-images.githubusercontent.com/88028350/138406396-b76bf2e7-9c23-49e8-a0af-af51686ec302.mp4
 
