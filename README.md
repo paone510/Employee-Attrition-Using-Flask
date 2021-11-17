@@ -35,7 +35,7 @@ Scikit Learn, Pandas, Flask, Heroku For Deployment.
 
 2. Run the model using below command(flask must be installed)- 
    
-   Python app.py
+   python app.py
 
 3. Flask will run on default port 5000.
    
