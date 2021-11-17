@@ -50,3 +50,7 @@ Scikit Learn, Pandas, Flask, Heroku For Deployment.
 
 https://user-images.githubusercontent.com/88028350/138406396-b76bf2e7-9c23-49e8-a0af-af51686ec302.mp4
 
+**Heroku Application Link :**
+
+https://employee-attrition-app.herokuapp.com
+
