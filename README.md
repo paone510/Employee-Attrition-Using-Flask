@@ -8,7 +8,7 @@ The main goal is to predict the requirement of resources and whether the existin
 
 ![High-employee-turnover](https://user-images.githubusercontent.com/88028350/141747011-645be726-2ba7-44e5-ae06-6e252559c354.jpg)
 
-*Project Structure*
+***Project Structure***
 
 This project has three major parts :
 
