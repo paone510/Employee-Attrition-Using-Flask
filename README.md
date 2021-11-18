@@ -31,11 +31,15 @@ Scikit Learn, Pandas, Flask, Heroku For Deployment.
 1. Ensure that in promt you are connect to the project home directory, To change directory
    use below command-
    
-   cd {project directory path} 
+   ````
+   cd {project directory path}
+   ````
 
 2. Run the model using below command(flask must be installed)- 
    
+   ````
    python app.py
+   ````
 
 3. Flask will run on default port 5000.
    
